@@ -1,0 +1,573 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=League+Gothic&family=Poppins:wght@300&display=swap");
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: #37356d;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 100px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #5F5DA6;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px 1px #00000050;
+  width: 60%;
+  transform: translateX(-100%);
+  opacity: 0;
+  z-index: 1;
+}
+
+#profile {
+  width: 200px;
+  max-height: 250px;
+  border-radius: 5px;
+}
+
+.text-space p {
+  margin-left: 8px;
+  margin-bottom: -8px;
+}
+
+.text-space h2, .text-space ul, .text-space i {
+  margin-left: 8px;
+}
+
+.text-space h2 {
+  margin-bottom: 0px;
+}
+
+.backSquare {
+  position: absolute;
+  user-select: none;
+  z-index: 0;
+  border-radius: 5%;
+  opacity: 0.3;
+  background-color: #262626;
+}
+
+@keyframes appearSq-1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(259deg);
+  }
+}
+.sqAnim--1 {
+  animation: appearSq-1 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-2 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(251deg);
+  }
+}
+.sqAnim--2 {
+  animation: appearSq-2 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-3 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(8deg);
+  }
+}
+.sqAnim--3 {
+  animation: appearSq-3 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-4 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(101deg);
+  }
+}
+.sqAnim--4 {
+  animation: appearSq-4 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-5 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(208deg);
+  }
+}
+.sqAnim--5 {
+  animation: appearSq-5 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-6 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(107deg);
+  }
+}
+.sqAnim--6 {
+  animation: appearSq-6 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-7 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(342deg);
+  }
+}
+.sqAnim--7 {
+  animation: appearSq-7 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-8 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(271deg);
+  }
+}
+.sqAnim--8 {
+  animation: appearSq-8 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-9 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(224deg);
+  }
+}
+.sqAnim--9 {
+  animation: appearSq-9 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-10 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(120deg);
+  }
+}
+.sqAnim--10 {
+  animation: appearSq-10 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-11 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(173deg);
+  }
+}
+.sqAnim--11 {
+  animation: appearSq-11 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-12 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(248deg);
+  }
+}
+.sqAnim--12 {
+  animation: appearSq-12 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-13 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(79deg);
+  }
+}
+.sqAnim--13 {
+  animation: appearSq-13 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-14 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(245deg);
+  }
+}
+.sqAnim--14 {
+  animation: appearSq-14 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-15 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(291deg);
+  }
+}
+.sqAnim--15 {
+  animation: appearSq-15 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-16 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(2deg);
+  }
+}
+.sqAnim--16 {
+  animation: appearSq-16 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-17 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(328deg);
+  }
+}
+.sqAnim--17 {
+  animation: appearSq-17 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-18 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(346deg);
+  }
+}
+.sqAnim--18 {
+  animation: appearSq-18 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-19 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(220deg);
+  }
+}
+.sqAnim--19 {
+  animation: appearSq-19 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-20 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(284deg);
+  }
+}
+.sqAnim--20 {
+  animation: appearSq-20 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-21 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(9deg);
+  }
+}
+.sqAnim--21 {
+  animation: appearSq-21 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-22 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(71deg);
+  }
+}
+.sqAnim--22 {
+  animation: appearSq-22 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-23 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(84deg);
+  }
+}
+.sqAnim--23 {
+  animation: appearSq-23 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-24 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(101deg);
+  }
+}
+.sqAnim--24 {
+  animation: appearSq-24 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-25 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(123deg);
+  }
+}
+.sqAnim--25 {
+  animation: appearSq-25 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-26 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(188deg);
+  }
+}
+.sqAnim--26 {
+  animation: appearSq-26 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-27 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(108deg);
+  }
+}
+.sqAnim--27 {
+  animation: appearSq-27 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-28 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(228deg);
+  }
+}
+.sqAnim--28 {
+  animation: appearSq-28 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-29 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(186deg);
+  }
+}
+.sqAnim--29 {
+  animation: appearSq-29 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-30 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(214deg);
+  }
+}
+.sqAnim--30 {
+  animation: appearSq-30 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-31 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(343deg);
+  }
+}
+.sqAnim--31 {
+  animation: appearSq-31 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-32 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(30deg);
+  }
+}
+.sqAnim--32 {
+  animation: appearSq-32 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-33 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(80deg);
+  }
+}
+.sqAnim--33 {
+  animation: appearSq-33 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-34 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(175deg);
+  }
+}
+.sqAnim--34 {
+  animation: appearSq-34 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-35 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(247deg);
+  }
+}
+.sqAnim--35 {
+  animation: appearSq-35 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-36 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(324deg);
+  }
+}
+.sqAnim--36 {
+  animation: appearSq-36 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-37 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(85deg);
+  }
+}
+.sqAnim--37 {
+  animation: appearSq-37 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-38 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(13deg);
+  }
+}
+.sqAnim--38 {
+  animation: appearSq-38 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes appearSq-39 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1) rotate(347deg);
+  }
+}
+.sqAnim--39 {
+  animation: appearSq-39 2s ease-in-out 0s 1 alternate;
+  animation-fill-mode: both;
+}
+
+@media screen and (max-width: 1200px) {
+  .page {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
