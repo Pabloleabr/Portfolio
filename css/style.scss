@@ -3,84 +3,181 @@
 $bg: #37356d;
 $light-bg: #5F5DA6;
 $middle-c: #8F8EBF;
-$light-dark: #2E4159;
+$light-dark: #493963;
 $dark: #262626;
 $text: white;
 
 
 body {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    background-color: $bg;
-    color: $text;
-    font-family: 'Poppins', sans-serif;
-    padding: 100px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: $bg;
+  color: $text;
+  font-family: 'Poppins', sans-serif;
+  padding: 100px;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;               
+}
+
+body::-webkit-scrollbar-track {
+  background: $dark;        
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $light-bg;    
+  border-radius: 20px;       
 
 }
-.center{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 100px;
+
+.center {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
 }
 
 .page {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    background-color: $light-bg;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 4px 4px 2px 1px #00000050;
-    width: 60%;
-    transform: translateX(-100%);
-    opacity: 0;
-    z-index: 1;
-  }
-#profile{
-    width: 200px;
-    max-height: 250px;
-    border-radius: 5px;
-    
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: $light-bg;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px 1px #00000050;
+  width: 60%;
+  transform: translateX(-100%);
+  opacity: 0;
+  z-index: 1;
 }
-.text-space p{
-    margin-left: 8px;
-    margin-bottom: -8px;
+
+#profile {
+  width: 200px;
+  max-height: 250px;
+  border-radius: 5px;
+
 }
-.text-space h2, .text-space ul, .text-space i  {
-    margin-left: 8px;
+
+.text-space p {
+  margin-left: 8px;
+  margin-bottom: -8px;
 }
-.text-space h2{
-    margin-bottom: 0px;
+
+.text-space h2,
+.text-space ul,
+.text-space i {
+  margin-left: 8px;
 }
-.backSquare{
-    position: absolute;
-    user-select: none;
-    z-index: 0;
-    border-radius: 5%;
-    opacity: 0.3;
-    background-color: $dark;
+
+.text-space h2 {
+  margin-bottom: 0px;
 }
+
+.backSquare {
+  position: absolute;
+  user-select: none;
+  z-index: 0;
+  border-radius: 5%;
+  opacity: 0.3;
+  background-color: $dark;
+}
+
+#proyects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+}
+
+#proyects ul {
+  position: relative;
+  transform: skewY(-15deg);
+  z-index: 1;
+}
+$tran-time:0.5s;
+
+#proyects ul li {
+  position: relative;
+  list-style: none;
+  width: 200px;
+  background-color: $light-dark;
+  padding: 15px;
+  z-index: var(--i); 
+  transition: $tran-time;
+}
+
+
+#proyects ul li::before{
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  left: -40px;
+  background-color: #3a2e4e;
+  transform-origin: right;
+  transform: skewY(45deg) translateY(-15px);
+  transition: $tran-time;
+}
+#proyects ul li:hover::before, #proyects ul li:hover::after{
+  background-color: #46447c;
+}
+#proyects ul li::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  top: -40px;
+  left: 0;
+  background-color: #3a2e4e;
+  transform-origin: bottom;
+  transform: skewX(45deg);
+  transition: $tran-time;
+}
+
+#proyects ul li:hover{
+  background-color: $light-bg;
+  transform: translateX(-20px);
+}
+
+#proyects ul li a{
+  text-decoration: none;
+  color: rgb(236, 234, 234);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: $tran-time;
+
+}
+#proyects ul li:hover a{
+  color: $text;
+}
+#proyects ul li:last-child::after{
+  box-shadow: -120px 120px 20px rgba(0,0,0,0.25);
+}
+
+
 @for $i from 1 to 40 {
-    $rotate: random(360);
+  $rotate: random(360);
 
-    @keyframes appearSq-#{$i} {
-        0%{
-            transform:scale(0) ;
-        }
-        100%{
-            transform:scale(1) rotate(#{$rotate}deg);
+  @keyframes appearSq-#{$i} {
+    0% {
+      transform: scale(0);
+    }
 
-        }
+    100% {
+      transform:scale(1) rotate(#{$rotate}deg);
+
     }
-    .sqAnim--#{$i}{
-        animation: appearSq-#{$i} 2s ease-in-out 0s 1 alternate;
-        animation-fill-mode: both;
-    }
+  }
+
+  .sqAnim--#{$i} {
+    animation: appearSq-#{$i} 2s ease-in-out 0s 1 alternate;
+    animation-fill-mode: both;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-    .page{
-        width: 80%;
-    }
+  .page {
+    width: 80%;
+  }
 }

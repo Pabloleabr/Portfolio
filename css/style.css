@@ -9,6 +9,19 @@ body {
   padding: 100px;
 }
 
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #262626;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #5F5DA6;
+  border-radius: 20px;
+}
+
 .center {
   display: flex;
   justify-content: center;
@@ -40,7 +53,9 @@ body {
   margin-bottom: -8px;
 }
 
-.text-space h2, .text-space ul, .text-space i {
+.text-space h2,
+.text-space ul,
+.text-space i {
   margin-left: 8px;
 }
 
@@ -57,12 +72,85 @@ body {
   background-color: #262626;
 }
 
+#proyects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+}
+
+#proyects ul {
+  position: relative;
+  transform: skewY(-15deg);
+  z-index: 1;
+}
+
+#proyects ul li {
+  position: relative;
+  list-style: none;
+  width: 200px;
+  background-color: #493963;
+  padding: 15px;
+  z-index: var(--i);
+  transition: 0.5s;
+}
+
+#proyects ul li::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  left: -40px;
+  background-color: #3a2e4e;
+  transform-origin: right;
+  transform: skewY(45deg) translateY(-15px);
+  transition: 0.5s;
+}
+
+#proyects ul li:hover::before, #proyects ul li:hover::after {
+  background-color: #46447c;
+}
+
+#proyects ul li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  top: -40px;
+  left: 0;
+  background-color: #3a2e4e;
+  transform-origin: bottom;
+  transform: skewX(45deg);
+  transition: 0.5s;
+}
+
+#proyects ul li:hover {
+  background-color: #5F5DA6;
+  transform: translateX(-20px);
+}
+
+#proyects ul li a {
+  text-decoration: none;
+  color: #eceaea;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+
+#proyects ul li:hover a {
+  color: white;
+}
+
+#proyects ul li:last-child::after {
+  box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.25);
+}
+
 @keyframes appearSq-1 {
   0% {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(259deg);
+    transform: scale(1) rotate(203deg);
   }
 }
 .sqAnim--1 {
@@ -75,7 +163,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(251deg);
+    transform: scale(1) rotate(255deg);
   }
 }
 .sqAnim--2 {
@@ -88,7 +176,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(8deg);
+    transform: scale(1) rotate(28deg);
   }
 }
 .sqAnim--3 {
@@ -101,7 +189,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(101deg);
+    transform: scale(1) rotate(68deg);
   }
 }
 .sqAnim--4 {
@@ -114,7 +202,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(208deg);
+    transform: scale(1) rotate(209deg);
   }
 }
 .sqAnim--5 {
@@ -127,7 +215,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(107deg);
+    transform: scale(1) rotate(54deg);
   }
 }
 .sqAnim--6 {
@@ -140,7 +228,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(342deg);
+    transform: scale(1) rotate(235deg);
   }
 }
 .sqAnim--7 {
@@ -153,7 +241,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(271deg);
+    transform: scale(1) rotate(281deg);
   }
 }
 .sqAnim--8 {
@@ -166,7 +254,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(224deg);
+    transform: scale(1) rotate(245deg);
   }
 }
 .sqAnim--9 {
@@ -179,7 +267,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(120deg);
+    transform: scale(1) rotate(164deg);
   }
 }
 .sqAnim--10 {
@@ -192,7 +280,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(173deg);
+    transform: scale(1) rotate(154deg);
   }
 }
 .sqAnim--11 {
@@ -205,7 +293,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(248deg);
+    transform: scale(1) rotate(8deg);
   }
 }
 .sqAnim--12 {
@@ -218,7 +306,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(79deg);
+    transform: scale(1) rotate(308deg);
   }
 }
 .sqAnim--13 {
@@ -231,7 +319,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(245deg);
+    transform: scale(1) rotate(109deg);
   }
 }
 .sqAnim--14 {
@@ -244,7 +332,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(291deg);
+    transform: scale(1) rotate(64deg);
   }
 }
 .sqAnim--15 {
@@ -257,7 +345,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(2deg);
+    transform: scale(1) rotate(311deg);
   }
 }
 .sqAnim--16 {
@@ -270,7 +358,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(328deg);
+    transform: scale(1) rotate(48deg);
   }
 }
 .sqAnim--17 {
@@ -283,7 +371,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(346deg);
+    transform: scale(1) rotate(2deg);
   }
 }
 .sqAnim--18 {
@@ -296,7 +384,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(220deg);
+    transform: scale(1) rotate(267deg);
   }
 }
 .sqAnim--19 {
@@ -309,7 +397,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(284deg);
+    transform: scale(1) rotate(330deg);
   }
 }
 .sqAnim--20 {
@@ -322,7 +410,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(9deg);
+    transform: scale(1) rotate(144deg);
   }
 }
 .sqAnim--21 {
@@ -335,7 +423,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(71deg);
+    transform: scale(1) rotate(85deg);
   }
 }
 .sqAnim--22 {
@@ -348,7 +436,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(84deg);
+    transform: scale(1) rotate(242deg);
   }
 }
 .sqAnim--23 {
@@ -361,7 +449,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(101deg);
+    transform: scale(1) rotate(309deg);
   }
 }
 .sqAnim--24 {
@@ -374,7 +462,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(123deg);
+    transform: scale(1) rotate(48deg);
   }
 }
 .sqAnim--25 {
@@ -387,7 +475,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(188deg);
+    transform: scale(1) rotate(259deg);
   }
 }
 .sqAnim--26 {
@@ -400,7 +488,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(108deg);
+    transform: scale(1) rotate(263deg);
   }
 }
 .sqAnim--27 {
@@ -413,7 +501,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(228deg);
+    transform: scale(1) rotate(261deg);
   }
 }
 .sqAnim--28 {
@@ -426,7 +514,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(186deg);
+    transform: scale(1) rotate(169deg);
   }
 }
 .sqAnim--29 {
@@ -439,7 +527,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(214deg);
+    transform: scale(1) rotate(278deg);
   }
 }
 .sqAnim--30 {
@@ -452,7 +540,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(343deg);
+    transform: scale(1) rotate(237deg);
   }
 }
 .sqAnim--31 {
@@ -465,7 +553,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(30deg);
+    transform: scale(1) rotate(262deg);
   }
 }
 .sqAnim--32 {
@@ -478,7 +566,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(80deg);
+    transform: scale(1) rotate(8deg);
   }
 }
 .sqAnim--33 {
@@ -491,7 +579,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(175deg);
+    transform: scale(1) rotate(255deg);
   }
 }
 .sqAnim--34 {
@@ -504,7 +592,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(247deg);
+    transform: scale(1) rotate(316deg);
   }
 }
 .sqAnim--35 {
@@ -517,7 +605,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(324deg);
+    transform: scale(1) rotate(92deg);
   }
 }
 .sqAnim--36 {
@@ -530,7 +618,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(85deg);
+    transform: scale(1) rotate(191deg);
   }
 }
 .sqAnim--37 {
@@ -543,7 +631,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(13deg);
+    transform: scale(1) rotate(306deg);
   }
 }
 .sqAnim--38 {
@@ -556,7 +644,7 @@ body {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(347deg);
+    transform: scale(1) rotate(11deg);
   }
 }
 .sqAnim--39 {
