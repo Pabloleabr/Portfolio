@@ -7,6 +7,7 @@ body {
   color: white;
   font-family: "Poppins", sans-serif;
   padding: 100px;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -63,20 +64,13 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 0px;
 }
 
-.backSquare {
-  position: absolute;
-  user-select: none;
-  z-index: 0;
-  border-radius: 5%;
-  opacity: 0.3;
-  background-color: #262626;
-}
-
 #proyects {
+  margin-top: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 10vh;
+  gap: 2vw;
 }
 
 #proyects ul {
@@ -93,6 +87,7 @@ body::-webkit-scrollbar-thumb {
   padding: 15px;
   z-index: var(--i);
   transition: 0.5s;
+  cursor: pointer;
 }
 
 #proyects ul li::before {
@@ -107,10 +102,6 @@ body::-webkit-scrollbar-thumb {
   transition: 0.5s;
 }
 
-#proyects ul li:hover::before, #proyects ul li:hover::after {
-  background-color: #46447c;
-}
-
 #proyects ul li::after {
   content: "";
   position: absolute;
@@ -122,6 +113,10 @@ body::-webkit-scrollbar-thumb {
   transform-origin: bottom;
   transform: skewX(45deg);
   transition: 0.5s;
+}
+
+#proyects ul li:hover::before, #proyects ul li:hover::after {
+  background-color: #46447c;
 }
 
 #proyects ul li:hover {
@@ -145,12 +140,82 @@ body::-webkit-scrollbar-thumb {
   box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.25);
 }
 
+#tv {
+  position: relative;
+  transform: skewY(15deg);
+  width: 35vw;
+  height: 400px;
+  background-color: #493963;
+  padding: 40px;
+  z-index: 1;
+}
+
+#tv::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 100%;
+  background-color: #3a2e4e;
+  transform-origin: left;
+  top: 0;
+  right: -35px;
+  transform: skewY(-45deg);
+}
+
+#tv::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 35px;
+  top: -35px;
+  left: 0;
+  background-color: #3a2e4e;
+  transform-origin: bottom;
+  transform: skewX(-45deg);
+}
+
+#proyect {
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+}
+
+#proyect::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: calc(100% - 75px);
+  background-color: #3a2e4e;
+  transform-origin: right;
+  transform: translateX(-5px);
+}
+
+#proyect::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 80px);
+  height: 5px;
+  top: calc(100% - 40px);
+  right: -10;
+  background-color: #3a2e4e;
+  transform-origin: top;
+}
+
+.backSquare {
+  position: absolute;
+  user-select: none;
+  z-index: 0;
+  border-radius: 5%;
+  opacity: 0.3;
+  background-color: #262626;
+}
+
 @keyframes appearSq-1 {
   0% {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(203deg);
+    transform: scale(1) rotate(87deg);
   }
 }
 .sqAnim--1 {
@@ -163,7 +228,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(255deg);
+    transform: scale(1) rotate(100deg);
   }
 }
 .sqAnim--2 {
@@ -176,7 +241,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(28deg);
+    transform: scale(1) rotate(55deg);
   }
 }
 .sqAnim--3 {
@@ -189,7 +254,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(68deg);
+    transform: scale(1) rotate(79deg);
   }
 }
 .sqAnim--4 {
@@ -202,7 +267,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(209deg);
+    transform: scale(1) rotate(329deg);
   }
 }
 .sqAnim--5 {
@@ -215,7 +280,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(54deg);
+    transform: scale(1) rotate(288deg);
   }
 }
 .sqAnim--6 {
@@ -228,7 +293,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(235deg);
+    transform: scale(1) rotate(149deg);
   }
 }
 .sqAnim--7 {
@@ -241,7 +306,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(281deg);
+    transform: scale(1) rotate(244deg);
   }
 }
 .sqAnim--8 {
@@ -254,7 +319,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(245deg);
+    transform: scale(1) rotate(184deg);
   }
 }
 .sqAnim--9 {
@@ -267,7 +332,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(164deg);
+    transform: scale(1) rotate(295deg);
   }
 }
 .sqAnim--10 {
@@ -280,7 +345,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(154deg);
+    transform: scale(1) rotate(185deg);
   }
 }
 .sqAnim--11 {
@@ -293,7 +358,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(8deg);
+    transform: scale(1) rotate(310deg);
   }
 }
 .sqAnim--12 {
@@ -306,7 +371,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(308deg);
+    transform: scale(1) rotate(143deg);
   }
 }
 .sqAnim--13 {
@@ -319,7 +384,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(109deg);
+    transform: scale(1) rotate(178deg);
   }
 }
 .sqAnim--14 {
@@ -332,7 +397,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(64deg);
+    transform: scale(1) rotate(164deg);
   }
 }
 .sqAnim--15 {
@@ -345,7 +410,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(311deg);
+    transform: scale(1) rotate(260deg);
   }
 }
 .sqAnim--16 {
@@ -358,7 +423,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(48deg);
+    transform: scale(1) rotate(325deg);
   }
 }
 .sqAnim--17 {
@@ -371,7 +436,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(2deg);
+    transform: scale(1) rotate(221deg);
   }
 }
 .sqAnim--18 {
@@ -384,7 +449,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(267deg);
+    transform: scale(1) rotate(256deg);
   }
 }
 .sqAnim--19 {
@@ -397,7 +462,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(330deg);
+    transform: scale(1) rotate(162deg);
   }
 }
 .sqAnim--20 {
@@ -410,7 +475,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(144deg);
+    transform: scale(1) rotate(126deg);
   }
 }
 .sqAnim--21 {
@@ -423,7 +488,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(85deg);
+    transform: scale(1) rotate(358deg);
   }
 }
 .sqAnim--22 {
@@ -436,7 +501,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(242deg);
+    transform: scale(1) rotate(275deg);
   }
 }
 .sqAnim--23 {
@@ -449,7 +514,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(309deg);
+    transform: scale(1) rotate(108deg);
   }
 }
 .sqAnim--24 {
@@ -462,7 +527,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(48deg);
+    transform: scale(1) rotate(345deg);
   }
 }
 .sqAnim--25 {
@@ -475,7 +540,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(259deg);
+    transform: scale(1) rotate(245deg);
   }
 }
 .sqAnim--26 {
@@ -488,7 +553,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(263deg);
+    transform: scale(1) rotate(36deg);
   }
 }
 .sqAnim--27 {
@@ -501,7 +566,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(261deg);
+    transform: scale(1) rotate(227deg);
   }
 }
 .sqAnim--28 {
@@ -514,7 +579,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(169deg);
+    transform: scale(1) rotate(73deg);
   }
 }
 .sqAnim--29 {
@@ -527,7 +592,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(278deg);
+    transform: scale(1) rotate(229deg);
   }
 }
 .sqAnim--30 {
@@ -540,7 +605,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(237deg);
+    transform: scale(1) rotate(273deg);
   }
 }
 .sqAnim--31 {
@@ -553,7 +618,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(262deg);
+    transform: scale(1) rotate(293deg);
   }
 }
 .sqAnim--32 {
@@ -566,7 +631,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(8deg);
+    transform: scale(1) rotate(290deg);
   }
 }
 .sqAnim--33 {
@@ -579,7 +644,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(255deg);
+    transform: scale(1) rotate(66deg);
   }
 }
 .sqAnim--34 {
@@ -592,7 +657,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(316deg);
+    transform: scale(1) rotate(249deg);
   }
 }
 .sqAnim--35 {
@@ -605,7 +670,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(92deg);
+    transform: scale(1) rotate(46deg);
   }
 }
 .sqAnim--36 {
@@ -618,7 +683,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(191deg);
+    transform: scale(1) rotate(264deg);
   }
 }
 .sqAnim--37 {
@@ -631,7 +696,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(306deg);
+    transform: scale(1) rotate(338deg);
   }
 }
 .sqAnim--38 {
@@ -644,7 +709,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(11deg);
+    transform: scale(1) rotate(148deg);
   }
 }
 .sqAnim--39 {
