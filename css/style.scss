@@ -102,6 +102,10 @@ $menu-w:40px;
   z-index: var(--i); 
   transition: $tran-time;
   cursor: pointer;
+  color: rgb(236, 234, 234);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  user-select: none;
 }
 
 
@@ -138,29 +142,23 @@ $menu-w:40px;
 #proyects ul li:hover{
   background-color: $light-bg;
   transform: translateX(-20px);
-}
-
-#proyects ul li a{
-  text-decoration: none;
-  color: rgb(236, 234, 234);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  transition: $tran-time;
-
-}
-#proyects ul li:hover a{
   color: $text;
 }
 #proyects ul li:last-child::after{
   box-shadow: -120px 120px 20px rgba(0,0,0,0.25);
 }
 
+#title{
+  //override list styles
+  transform: translateY(-80px) !important; 
+  cursor: default !important;
+}
 
 #tv {
   position: relative;
   transform: skewY(15deg);
   width: 35vw;
-  height: 400px;
+  height: auto;
   background-color: $light-dark;
   padding: 40px;
   z-index: 3; 
@@ -197,6 +195,7 @@ $menu-w:40px;
   height: 35px;
   background-color: #46375f;
   z-index: 2; 
+  user-select: none;
 }
 
 
@@ -222,6 +221,7 @@ $menu-w:40px;
   left: -25px;
   background-color: #46375f;
   z-index: 1; 
+  user-select: none;
 }
 
 
@@ -249,8 +249,11 @@ $menu-w:40px;
   transform: skewX(-45deg) ;
   z-index: 0;
 }
-.pimg{
+#pimg{
   width: 100%;
+  margin-bottom: -8px;
+  height: 20vw;
+  user-select: none;
 }
 #proyect div{
   width: 100%;
@@ -263,6 +266,7 @@ $menu-w:40px;
   width: 100%;
   height: 100%;
   background-color: black;
+  user-select: none;
 }
 #proyect::before{
   content: '';
@@ -320,5 +324,21 @@ $menu-w:40px;
 @media screen and (max-width: 1200px) {
   .page {
     width: 80%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .page{
+    width: 100%;
+    flex-direction: column;
+  }
+
+}
+@media screen and (max-width: 500px) {
+  #proyects {
+    flex-direction: column;
+    gap: 100px;
+  }
+  body{
+    padding: 10px;
   }
 }

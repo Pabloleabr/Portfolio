@@ -32,3 +32,19 @@ sqTimer = setInterval(()=>{
     }
 }, 200);
 
+const pRoutes = {
+    "forum": ["img/forum.gif","https://github.com/Pabloleabr/Proyecto"],
+    "conway":["img/conway.gif","https://github.com/Pabloleabr/JS/tree/main/game_of_life"],
+    }
+const pimg = d.getElementById("pimg");
+const aimg = d.getElementById("aimg");
+
+d.getElementById("bforum").onclick = () =>{
+    pimg.src = pRoutes.forum[0];
+    aimg.href = pRoutes.forum[1];
+}
+
+d.getElementById("bconway").onclick = () =>{
+    pimg.src = pRoutes.conway[0];
+    aimg.href = pRoutes.conway[1];
+}
