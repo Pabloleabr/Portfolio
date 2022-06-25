@@ -15,7 +15,6 @@ body {
   background-color: $bg;
   color: $text;
   font-family: 'Poppins', sans-serif;
-  padding: 100px;
   overflow-x: hidden;
 }
 
@@ -36,7 +35,6 @@ body::-webkit-scrollbar-thumb {
 .center {
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
 }
 
 .page {
@@ -75,9 +73,31 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 0px;
 }
 
-//menu variables and classes
+.hidden{
+  display: none;
+}
+#contact{
+  position: relative;
+  background-color: $dark;
+  margin-top: 100px;
+}
+#contact h1{
+  margin: 15px 20px;
+}
+#contact hr{
+  margin: 0px 20px;
+}
+.center, #proyects{
+  margin: 50px 100px;
+
+}
+
+//Proyect menu, variables and classes
 $tran-time:0.5s;
 $menu-w:40px;
+#pdescription{
+  min-height: 150px; 
+}
 #proyects {
   margin-top: 10%;
   display: flex;
@@ -186,6 +206,7 @@ $menu-w:40px;
   background-color: #3a2e4e;
   transform-origin: bottom;
   transform: skewX(-45deg) ;
+  box-shadow: 450px 450px 20px rgba(0,0,0,0.25);
 }
 
 #bar {
@@ -326,19 +347,22 @@ $menu-w:40px;
     width: 80%;
   }
 }
+@media screen and (max-width: 1000px) {
+  #proyects {
+    flex-direction: column;
+    gap: 100px;
+  }
+  .center, #proyects{
+    margin: 70px 30px;
+  }
+  #pdescription{
+    min-height: auto;
+  }
+}
 @media screen and (max-width: 700px) {
   .page{
     width: 100%;
     flex-direction: column;
   }
 
-}
-@media screen and (max-width: 500px) {
-  #proyects {
-    flex-direction: column;
-    gap: 100px;
-  }
-  body{
-    padding: 10px;
-  }
 }

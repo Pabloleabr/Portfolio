@@ -38,13 +38,27 @@ const pRoutes = {
     }
 const pimg = d.getElementById("pimg");
 const aimg = d.getElementById("aimg");
+const dforum = d.getElementById("dforum");
+const dconway = d.getElementById("dconway");
+
+function hiddeText(){
+    d.getElementById("pdescription").querySelectorAll("p").forEach((p)=>{
+        p.classList.add("hidden");
+    })
+
+}
 
 d.getElementById("bforum").onclick = () =>{
     pimg.src = pRoutes.forum[0];
     aimg.href = pRoutes.forum[1];
+    hiddeText();
+    dforum.classList.remove("hidden")
+
 }
 
 d.getElementById("bconway").onclick = () =>{
     pimg.src = pRoutes.conway[0];
     aimg.href = pRoutes.conway[1];
+    hiddeText();
+    dconway.classList.remove("hidden")
 }
