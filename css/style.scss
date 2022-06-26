@@ -80,6 +80,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   background-color: $dark;
   margin-top: 100px;
+  z-index: 2;
 }
 #contact h1{
   margin: 15px 20px;
@@ -91,7 +92,16 @@ body::-webkit-scrollbar-thumb {
   margin: 50px 100px;
 
 }
-
+#inner-contact{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 10px 20px
+}
+a{
+  text-decoration: none;
+  color: white;
+}
 //Proyect menu, variables and classes
 $tran-time:0.5s;
 $menu-w:40px;
@@ -206,7 +216,7 @@ $menu-w:40px;
   background-color: #3a2e4e;
   transform-origin: bottom;
   transform: skewX(-45deg) ;
-  box-shadow: 450px 450px 20px rgba(0,0,0,0.25);
+  box-shadow: 28vw 28vw 20px rgba(0,0,0,0.25);
 }
 
 #bar {

@@ -35,11 +35,14 @@ sqTimer = setInterval(()=>{
 const pRoutes = {
     "forum": ["img/forum.gif","https://github.com/Pabloleabr/Proyecto"],
     "conway":["img/conway.gif","https://github.com/Pabloleabr/JS/tree/main/game_of_life"],
+    "sand": ["img/sand.gif","https://github.com/Pabloleabr/java/tree/main/sandbox"],
+
     }
 const pimg = d.getElementById("pimg");
 const aimg = d.getElementById("aimg");
 const dforum = d.getElementById("dforum");
 const dconway = d.getElementById("dconway");
+const dsand = d.getElementById("dsand");
 
 function hiddeText(){
     d.getElementById("pdescription").querySelectorAll("p").forEach((p)=>{
@@ -61,4 +64,11 @@ d.getElementById("bconway").onclick = () =>{
     aimg.href = pRoutes.conway[1];
     hiddeText();
     dconway.classList.remove("hidden")
+}
+
+d.getElementById("bsand").onclick = () =>{
+    pimg.src = pRoutes.sand[0];
+    aimg.href = pRoutes.sand[1];
+    hiddeText();
+    dsand.classList.remove("hidden")
 }

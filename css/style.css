@@ -70,6 +70,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   background-color: #262626;
   margin-top: 100px;
+  z-index: 2;
 }
 
 #contact h1 {
@@ -82,6 +83,18 @@ body::-webkit-scrollbar-thumb {
 
 .center, #proyects {
   margin: 50px 100px;
+}
+
+#inner-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 10px 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 #pdescription {
@@ -194,7 +207,7 @@ body::-webkit-scrollbar-thumb {
   background-color: #3a2e4e;
   transform-origin: bottom;
   transform: skewX(-45deg);
-  box-shadow: 450px 450px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 28vw 28vw 20px rgba(0, 0, 0, 0.25);
 }
 
 #bar {
@@ -314,7 +327,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(1deg);
+    transform: scale(1) rotate(139deg);
   }
 }
 .sqAnim--1 {
@@ -327,7 +340,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(181deg);
+    transform: scale(1) rotate(224deg);
   }
 }
 .sqAnim--2 {
@@ -340,7 +353,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(104deg);
+    transform: scale(1) rotate(110deg);
   }
 }
 .sqAnim--3 {
@@ -353,7 +366,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(335deg);
+    transform: scale(1) rotate(278deg);
   }
 }
 .sqAnim--4 {
@@ -366,7 +379,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(349deg);
+    transform: scale(1) rotate(191deg);
   }
 }
 .sqAnim--5 {
@@ -379,7 +392,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(206deg);
+    transform: scale(1) rotate(328deg);
   }
 }
 .sqAnim--6 {
@@ -392,7 +405,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(349deg);
+    transform: scale(1) rotate(123deg);
   }
 }
 .sqAnim--7 {
@@ -405,7 +418,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(285deg);
+    transform: scale(1) rotate(356deg);
   }
 }
 .sqAnim--8 {
@@ -418,7 +431,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(199deg);
+    transform: scale(1) rotate(189deg);
   }
 }
 .sqAnim--9 {
@@ -431,7 +444,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(300deg);
+    transform: scale(1) rotate(329deg);
   }
 }
 .sqAnim--10 {
@@ -444,7 +457,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(193deg);
+    transform: scale(1) rotate(135deg);
   }
 }
 .sqAnim--11 {
@@ -457,7 +470,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(337deg);
+    transform: scale(1) rotate(44deg);
   }
 }
 .sqAnim--12 {
@@ -470,7 +483,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(58deg);
+    transform: scale(1) rotate(314deg);
   }
 }
 .sqAnim--13 {
@@ -483,7 +496,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(129deg);
+    transform: scale(1) rotate(199deg);
   }
 }
 .sqAnim--14 {
@@ -496,7 +509,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(250deg);
+    transform: scale(1) rotate(314deg);
   }
 }
 .sqAnim--15 {
@@ -509,7 +522,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(137deg);
+    transform: scale(1) rotate(288deg);
   }
 }
 .sqAnim--16 {
@@ -522,7 +535,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(151deg);
+    transform: scale(1) rotate(341deg);
   }
 }
 .sqAnim--17 {
@@ -535,7 +548,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(318deg);
+    transform: scale(1) rotate(344deg);
   }
 }
 .sqAnim--18 {
@@ -548,7 +561,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(31deg);
+    transform: scale(1) rotate(301deg);
   }
 }
 .sqAnim--19 {
@@ -561,7 +574,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(320deg);
+    transform: scale(1) rotate(293deg);
   }
 }
 .sqAnim--20 {
@@ -574,7 +587,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(55deg);
+    transform: scale(1) rotate(7deg);
   }
 }
 .sqAnim--21 {
@@ -587,7 +600,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(204deg);
+    transform: scale(1) rotate(275deg);
   }
 }
 .sqAnim--22 {
@@ -600,7 +613,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(179deg);
+    transform: scale(1) rotate(91deg);
   }
 }
 .sqAnim--23 {
@@ -613,7 +626,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(282deg);
+    transform: scale(1) rotate(207deg);
   }
 }
 .sqAnim--24 {
@@ -626,7 +639,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(254deg);
+    transform: scale(1) rotate(91deg);
   }
 }
 .sqAnim--25 {
@@ -639,7 +652,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(253deg);
+    transform: scale(1) rotate(238deg);
   }
 }
 .sqAnim--26 {
@@ -652,7 +665,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(126deg);
+    transform: scale(1) rotate(279deg);
   }
 }
 .sqAnim--27 {
@@ -665,7 +678,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(181deg);
+    transform: scale(1) rotate(132deg);
   }
 }
 .sqAnim--28 {
@@ -678,7 +691,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(153deg);
+    transform: scale(1) rotate(273deg);
   }
 }
 .sqAnim--29 {
@@ -691,7 +704,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(330deg);
+    transform: scale(1) rotate(135deg);
   }
 }
 .sqAnim--30 {
@@ -704,7 +717,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(293deg);
+    transform: scale(1) rotate(104deg);
   }
 }
 .sqAnim--31 {
@@ -717,7 +730,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(75deg);
+    transform: scale(1) rotate(340deg);
   }
 }
 .sqAnim--32 {
@@ -730,7 +743,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(314deg);
+    transform: scale(1) rotate(204deg);
   }
 }
 .sqAnim--33 {
@@ -743,7 +756,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(289deg);
+    transform: scale(1) rotate(105deg);
   }
 }
 .sqAnim--34 {
@@ -756,7 +769,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(94deg);
+    transform: scale(1) rotate(298deg);
   }
 }
 .sqAnim--35 {
@@ -769,7 +782,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(46deg);
+    transform: scale(1) rotate(242deg);
   }
 }
 .sqAnim--36 {
@@ -782,7 +795,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(2deg);
+    transform: scale(1) rotate(168deg);
   }
 }
 .sqAnim--37 {
@@ -795,7 +808,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(70deg);
+    transform: scale(1) rotate(356deg);
   }
 }
 .sqAnim--38 {
@@ -808,7 +821,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0);
   }
   100% {
-    transform: scale(1) rotate(82deg);
+    transform: scale(1) rotate(170deg);
   }
 }
 .sqAnim--39 {
